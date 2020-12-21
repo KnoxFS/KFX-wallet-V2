@@ -1,2 +1,1 @@
-# KFX-wallet-V2
-New KnoxFS wallet
+KFX Core repository

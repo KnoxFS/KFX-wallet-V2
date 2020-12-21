@@ -1,0 +1,26 @@
+# /etc/conf.d/kfxd: config file for /etc/init.d/kfxd
+
+# Config file location
+#BITCOIND_CONFIGFILE="/etc/kfx/kfx.conf"
+
+# What directory to write pidfile to?  (created and owned by $BITCOIND_USER)
+#BITCOIND_PIDDIR="/var/run/kfxd"
+
+# What filename to give the pidfile
+#BITCOIND_PIDFILE="${BITCOIND_PIDDIR}/kfxd.pid"
+
+# Where to write kfxd data (be mindful that the blockchain is large)
+#BITCOIND_DATADIR="/var/lib/kfxd"
+
+# User and group to own kfxd process
+#BITCOIND_USER="kfx"
+#BITCOIND_GROUP="kfx"
+
+# Path to kfxd executable
+#BITCOIND_BIN="/usr/bin/kfxd"
+
+# Nice value to run kfxd under
+#BITCOIND_NICE=0
+
+# Additional options (avoid -conf and -datadir, use flags above)
+BITCOIND_OPTS=""

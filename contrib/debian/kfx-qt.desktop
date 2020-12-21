@@ -1,0 +1,12 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=KFX
+Comment=KFX P2P Cryptocurrency
+Comment[fr]=KFX, monnaie virtuelle cryptographique pair à pair
+Comment[tr]=KFX, eşten eşe kriptografik sanal para birimi
+Exec=kfx-qt %u
+Terminal=false
+Type=Application
+Icon=kfx128
+MimeType=x-scheme-handler/kfx;
+Categories=Office;Finance;

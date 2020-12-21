@@ -1,0 +1,26 @@
+[Unit]
+Description=KFX's distributed currency daemon
+After=network.target
+
+[Service]
+User=kfx
+Group=kfx
+
+Type=forking
+PIDFile=/var/lib/kfxd/kfxd.pid
+
+ExecStart=/usr/bin/kfxd -daemon -pid=/var/lib/kfxd/kfxd.pid \
+          -conf=/etc/kfx/kfx.conf -datadir=/var/lib/kfxd
+
+ExecStop=-/usr/bin/kfx-cli -conf=/etc/kfx/kfx.conf \
+         -datadir=/var/lib/kfxd stop
+
+Restart=always
+PrivateTmp=true
+TimeoutStopSec=60s
+TimeoutStartSec=2s
+StartLimitInterval=120s
+StartLimitBurst=5
+
+[Install]
+WantedBy=multi-user.target
