@@ -192,8 +192,8 @@ function checks() {
     echo -e "${RED} You are not running Ubuntu, Installation is cancelled.${NC}"
     exit 1
   fi
-  if [[ $LSB_RELEASE != *16.04* && $LSB_RELEASE != *18.04* ]]; then
-    echo -e "${RED}You are not running Ubuntu 18.04 or 16.04. Installation is cancelled.${NC}"
+  if [[ $LSB_RELEASE != *16.04* && $LSB_RELEASE != *18.04* && $LSB_RELEASE != *20.04* ]]; then
+    echo -e "${RED}You are not running Ubuntu 16.04, 18.04 or 20.04. Installation is cancelled.${NC}"
     exit 1
   fi
 
